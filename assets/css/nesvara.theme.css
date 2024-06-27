@@ -1,0 +1,60 @@
+.display-3, .display-4 {
+    font-weight: 700;
+}
+
+.display-4 {
+    font-size: 27px;
+}
+
+h3{
+    font-weight: 700;
+}
+
+h5 , .h5{
+    color: #00d889;
+    font-size: 1rem;
+    font-weight: 600 !important;
+}
+
+h5::before {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid #00d889;
+    width: 3rem;
+    margin: 0 .5rem 0 0;
+    transform: translateY(-.3rem);
+}
+
+body .dark-mode span:not(.badge), 
+body .dark-mode dd a.front{
+    color: #000;
+}
+
+.dark-mode {
+    --si-body-bg: #09101a;
+}
+
+.btn{
+    border-radius: 2rem !important;
+}
+
+.btn-primary {
+    --si-btn-color: #000 !important;
+}
+
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal{
+    bottom:0 !important;
+}
+
+.breadcrumb {
+    --si-breadcrumb-font-weight: 400;
+    --si-breadcrumb-color: #00d889;
+    --si-breadcrumb-hover-color: var(--si-gray-800);
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: var(--si-breadcrumb-item-padding-x);
+    color: var(--si-gray-800);
+    content: var(--si-breadcrumb-divider, "\ebe6")/* rtl: var(--si-breadcrumb-divider, "\ed3f") */
+}
