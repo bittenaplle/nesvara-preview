@@ -47,11 +47,49 @@ body{
     background-size: 100%;
 }
 
+.over-video{    
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.video-bg-wrap{
+	position: relative;
+}
+
+.video-bg {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000;
+	z-index: 5;
+}
+
+.video-bg-desktop{display:none;}
+.video-bg-mobile {display:block;}
+
+.video-bg-content{
+    padding: 4rem 2rem;
+	position: relative;
+	z-index: 10;
+	top: 0;
+    min-height: 100vh;
+}
+
+.hero-col{
+    min-height: 100vh;
+}
+
 @media(min-width: 768px) {
     .bg-hero{
         background-image: url('../images/bg-home-desktop.jpg');
         background-size: cover;
     }
+
+    .video-bg-desktop{display:block;}
+    .video-bg-mobile {display:none;}
 }
 
 /* spacing */
