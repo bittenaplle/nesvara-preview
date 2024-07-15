@@ -324,12 +324,14 @@ p{
 /*- floating menu -*/
 
 .icon-arrow{
-    width: 5rem;
+    width: 3rem !important;
+    padding-top: 1rem;
 }
 
 @media(min-width: 768px) {
     .icon-arrow{
-        width: 2.5rem;
+        width: 3rem !important;
+        padding-top: .5rem;
     }
 }
 
@@ -511,6 +513,10 @@ p{
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
+}
+
+.modal-video{
+    z-index: 100;
 }
 
 .cta-wa{
