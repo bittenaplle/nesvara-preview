@@ -140,7 +140,15 @@
             </div>
 
 
-            <div class="container space-t-2">
+            <div class="container pt-4">
+
+                <div class="row justify-content-center">
+                    <div class="col-6 col-lg-3 offset-lg-1">
+                        <img src="assets/images/project/Logo_Coway-1.png" alt="" class="w-100 mb-4">
+                    </div>
+                    <div class="col-lg-8"></div>
+                </div>
+
 
                 <div class="row justify-content-center">
                     <div class="col-lg-5">
@@ -175,75 +183,88 @@
                     </div>
 
                     <div class="col-lg-5 position-relative">
-
-                        <div class="row zindex-2 position-relative mt-1">
-                            <div class="col-lg-6">
-                                <div class="radius-2 overflow-hidden mb-4">
-                                    <img src="assets/images/project/hp.jpg" class="w-100" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="radius-2 overflow-hidden mb-4">
-                                    <img src="assets/images/project/SS801151-mq.jpg" class="w-100" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="radius-2 overflow-hidden mb-4">
-                                    <img src="assets/images/project/SS807902-mq.jpg" class="w-100" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="radius-2 overflow-hidden mb-4">
-                                    <img src="assets/images/project/SS805694-mq.jpg" class="w-100" alt="">
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="element-swiper zindex-1">
                             <img src="assets/images/element-2.svg" alt="">
                         </div>
+                    </div>
 
+                    <div class="col-10">
+                        <!-- Gallery inside carousel -->
+                        <div class="position-relative px-md-5">
+                            <button type="button" id="prev"
+                                class="btn btn-prev btn-icon btn-sm position-absolute top-50 translate-middle-y start-0 d-none d-md-inline-flex mt-n4">
+                                <i class="bx bx-chevron-left"></i>
+                            </button>
+                            <button type="button" id="next"
+                                class="btn btn-next btn-icon btn-sm position-absolute top-50 translate-middle-y end-0 d-none d-md-inline-flex mt-n4">
+                                <i class="bx bx-chevron-right"></i>
+                            </button>
+                            <div class="swiper pt-1" data-swiper-options='{
+                                "slidesPerView": 2,
+                                "spaceBetween": 20,
+                                "loop": true,
+                                "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "clickable": true
+                                },
+                                "navigation": {
+                                    "prevEl": "#prev",
+                                    "nextEl": "#next"
+                                },
+                                "breakpoints": {
+                                    "500": {
+                                        "slidesPerView": 3,
+                                        "spaceBetween": 16
+                                    },
+                                    "700": {
+                                        "slidesPerView": 4,
+                                        "spaceBetween": 24
+                                    },
+                                    "1000": {
+                                        "slidesPerView": 4,
+                                        "spaceBetween": 24
+                                    }
+                                }
+                            }'>
+                                <div class="swiper-wrapper gallery" data-video="true">
+
+                                    <!-- Item -->
+                                    <div class="swiper-slide">
+                                        <a href="assets/images/project/SS801151-mq.jpg" class="gallery-item rounded-3"
+                                            data-sub-html="<h6 class='fs-sm text-light'>Gallery image caption</h6>">
+                                            <img src="assets/images/project/SS801151-q.jpg" alt="Gallery thumbnail">
+                                            <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Item -->
+                                    <div class="swiper-slide">
+                                        <a href="assets/images/project/SS805694-mq.jpg" class="gallery-item rounded-3"
+                                            data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                                            <img src="assets/images/project/SS805694-q.jpg" alt="Gallery thumbnail">
+                                            <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Item -->
+                                    <div class="swiper-slide">
+                                        <a href="assets/images/project/SS807902-mq.jpg" class="gallery-item rounded-3"
+                                            data-sub-html='<h6 class="fs-sm text-light">Gallery image caption</h6>'>
+                                            <img src="assets/images/project/SS807902-q.jpg" alt="Gallery thumbnail">
+                                            <div class="gallery-item-caption fs-sm fw-medium">Gallery image caption
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination position-relative pt-3 pt-sm-4 mt-4"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-        </section>
-
-        <section class="space-t-2 bg-dark-2">
-            <div class="container">
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <h5>Brand Experience Agency</h5>
-                        <h1 class="display-4 pb-2 pb-sm-3 elemen-2 z-1">Conclusion <span
-                                class="text-primary">Project</span></h1>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="mb-4">
-                            <p>Since 2019, Nesvara has partnered with HP Indonesia, supporting 20 distributors with
-                                diverse marketing needs. We tailor solutions, from digital ads and social media
-                                management to podcasts and sales gatherings, tracked via a central dashboard.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center space-t-2">
-                    <div class="col-lg-5">
-                        <h1 class="display-4 pb-2 pb-sm-3">Ready to
-                            <span class="text-primary">Work</span> with us ?
-                        </h1>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="mb-4">
-                            <a href="contact" class="btn btn-primary btn-3d btn-sm fs-sm rounded" rel="noopener">
-                                Get A Quote <i class="bx bx-right-arrow-circle fs-5 lh-1 ms-1"></i>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
         </section>
 
     </main>
@@ -258,7 +279,8 @@
         </div>
     </footer>
     <a href="" class="cta-wa" data-scroll>
-        <img src="assets/images/floating-button.png" class="w-100" alt="">
+        <img src="assets/images/floating-button-icon.png" class="cta-wa-icon" class="w-100" alt="">
+        <img src="assets/images/floating-button-text.png" class="cta-wa-text rotate-img" class="w-100" alt="">
     </a>
 
     <!-- Vendor Scripts -->
@@ -269,6 +291,9 @@
     <script src="layouts/silicon/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="layouts/silicon/vendor/lightgallery/lightgallery.min.js"></script>
     <script src="layouts/silicon/vendor/lightgallery/plugins/video/lg-video.min.js"></script>
+    <script src="layouts/silicon/vendor/lightgallery/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="layouts/silicon/vendor/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="layouts/silicon/vendor/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
 
     <!-- Main Theme Script -->
     <script src="layouts/silicon/js/theme.min.js"></script>

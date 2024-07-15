@@ -495,10 +495,58 @@ p{
     padding: 1.5rem 1rem 1rem 1rem;
 }
 
+.project-thumbnail img{
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+
+.project-thumbnail:hover img{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}
+
 .cta-wa{
     position: fixed;
     bottom: 1rem;
     right: 1rem;
     width: 95px;
     z-index: 10;
+}
+
+.cta-wa-icon{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 12;
+
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+}
+
+.cta-wa-text{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 11;
+}
+
+.rotate-img{
+    -webkit-animation: spin 30s linear infinite;
+    -moz-animation: spin 30s linear infinite;
+    animation: spin 30s linear infinite;
+}
+
+.cta-wa-icon:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
 }
